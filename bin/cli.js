@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var params = require('minimist')(process.argv.slice(2));
 var Dyno = require('../index.js');
-var queue = require('queue-async');
+var queue = require('d3-queue').queue;
 var es = require('event-stream');
 var stream = require('stream');
 

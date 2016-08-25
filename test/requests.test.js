@@ -7,7 +7,7 @@ var Requests = require('../lib/requests');
 var _ = require('underscore');
 var crypto = require('crypto');
 var Dyno = require('..');
-var queue = require('queue-async');
+var queue = require('d3-queue').queue;
 
 var fixtures = _.range(150).map(function(i) {
   return {
